@@ -2,6 +2,12 @@
 
 Machine learning models for predicting 30-day hospital readmission among patients with diabetes.
 
+## Group Members
+
+- Harrison Furman
+- [Thomas Raulerson
+
+
 ## Research Question
 
 Among hospitalized patients with diabetes, how accurately can clinical information available at discharge predict hospital readmission within 30 days?
@@ -11,6 +17,10 @@ Among hospitalized patients with diabetes, how accurately can clinical informati
 This project uses the Diabetes 130-US Hospitals dataset, containing 101,766 hospital encounters. After excluding encounters with discharge dispositions indicating death or hospice care, 99,343 encounters from 69,990 unique patients remained eligible.
 
 The dataset is available from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008).
+
+**Dataset Documentation:** [UCI Diabetes 130-US Hospitals Dataset — Description and Variables](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
+
+**Peer-Reviewed Paper:** Strack et al. (2014). [Impact of HbA1c Measurement on Hospital Readmission Rates: Analysis of 70,000 Clinical Database Patient Records](https://doi.org/10.1155/2014/781670). *BioMed Research International*.
 
 ## Methods
 
@@ -40,7 +50,7 @@ The random forest was evaluated at a classification threshold of 0.12. Additiona
 3. Install Python and the required packages:
 
 ```bash
-pip install marimo pandas numpy matplotlib scikit-learn
+pip install marimo==0.25.2 pandas==3.0.2 numpy==2.4.3 matplotlib==3.10.8 scikit-learn==1.8.0
 ```
 
 4. Download the Marimo Python notebook from this repository.
@@ -68,6 +78,13 @@ The models demonstrated modest predictive performance and should not be used ind
 - Random seed: 42
 - Patient-level training/testing split
 - Three-fold grouped cross-validation
-- Marimo notebook generated with version 0.25.2
+- Marimo version: 0.25.2
+- pandas version: 3.0.2
+- NumPy version: 2.4.3
+- Matplotlib version: 3.10.8
+- scikit-learn version: 1.8.0
+
+The package versions were identified from the browser-based Marimo environment used for the analysis.
 
 The analysis is intended for educational and research purposes.
+
