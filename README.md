@@ -8,7 +8,6 @@ Machine learning models for predicting 30-day hospital readmission among patient
 - Thomas Raulerson
 - Edwin Salcedo
 
-
 ## Research Question
 
 Among hospitalized patients with diabetes, how accurately can clinical information available at discharge predict hospital readmission within 30 days?
@@ -34,12 +33,12 @@ Patients were separated into training and testing sets to prevent patient-level 
 
 ## Results
 
-The random forest achieved the highest test AUROC of 0.6349, compared with 0.6306 for logistic regression.
+The random forest achieved the highest test AUROC of 0.6351, compared with 0.6306 for logistic regression.
 
 | Metric | Logistic Regression | Random Forest |
 |---|---|---|
-| AUROC | 0.6306 | 0.6349 |
-| AUPRC | 0.1938 | 0.1957 |
+| AUROC | 0.6306 | 0.6351 |
+| AUPRC | 0.1938 | 0.1955 |
 | Brier Score | 0.0967 | 0.0965 |
 
 The random forest was evaluated at a classification threshold of 0.12. Additional analyses included feature importance, calibration, individual patient predictions, age subgroup performance, error analysis, and sensitivity analysis.
@@ -68,24 +67,4 @@ marimo edit "notebook (12).py"
 
 - `notebook (12).py` — Executable Marimo notebook containing the complete analysis.
 - `Diabetes_Readmission_Analysis.pdf` — Executed notebook showing code, results, tables, and visualizations.
-- `README.md` — Project description and instructions.
-
-## Limitations
-
-The models demonstrated modest predictive performance and should not be used independently for clinical decision-making. The dataset is historical, contains missing information, and may not capture readmissions outside participating hospitals.
-
-## Reproducibility
-
-- Random seed: 42
-- Patient-level training/testing split
-- Three-fold grouped cross-validation
-- Marimo version: 0.25.2
-- pandas version: 3.0.2
-- NumPy version: 2.4.3
-- Matplotlib version: 3.10.8
-- scikit-learn version: 1.8.0
-
-The package versions were identified from the browser-based Marimo environment used for the analysis.
-
-The analysis is intended for educational and research purposes.
-
+- `README.md` — Project
