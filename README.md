@@ -67,4 +67,23 @@ marimo edit "notebook (12).py"
 
 - `notebook (12).py` — Executable Marimo notebook containing the complete analysis.
 - `Diabetes_Readmission_Analysis.pdf` — Executed notebook showing code, results, tables, and visualizations.
-- `README.md` — Project
+- `README.md` — Project description and instructions.
+
+## Limitations
+
+The models demonstrated modest predictive performance and should not be used independently for clinical decision-making. The dataset is historical, contains missing information, and may not capture readmissions outside participating hospitals.
+
+## Reproducibility
+
+- Random seed: 42
+- Patient-level training/testing split
+- Three-fold grouped cross-validation
+- Marimo version: 0.25.2
+- pandas version: 3.0.2
+- NumPy version: 2.4.3
+- Matplotlib version: 3.10.8
+- scikit-learn version: 1.8.0
+
+The package versions were identified from the browser-based Marimo environment used for the analysis.
+
+The analysis is intended for educational and research purposes.
