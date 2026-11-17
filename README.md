@@ -6,6 +6,7 @@ Machine learning models for predicting 30-day hospital readmission among patient
 
 - Harrison Furman
 - Thomas Raulerson
+- Edwin Salcedo
 
 
 ## Research Question
